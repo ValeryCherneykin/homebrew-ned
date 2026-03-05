@@ -11,7 +11,7 @@ class Ned < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ValeryCherneykin/ned/releases/download/v0.3.0/ned_0.3.0_darwin_amd64.tar.gz"
-      sha256 "5aa3da044705ffe4ad2a36ede467205bafe10755466b7b0499b54f441ae82b11"
+      sha256 "b510dd002a39cce251dfb2849611e3ec264b6fa8586ce29b9ceb2ec97d35697b"
 
       define_method(:install) do
         bin.install "ned"
@@ -19,7 +19,7 @@ class Ned < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ValeryCherneykin/ned/releases/download/v0.3.0/ned_0.3.0_darwin_arm64.tar.gz"
-      sha256 "e99324920052c3688caf7b6b0ec8d1fc6fb380ec04cca8ea80518f7a51c32cbe"
+      sha256 "4642a75f2d4e2ed5f43f00866ac3768a028c43851ffed86d4ffdedcccd0d7a8a"
 
       define_method(:install) do
         bin.install "ned"
@@ -30,14 +30,14 @@ class Ned < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ValeryCherneykin/ned/releases/download/v0.3.0/ned_0.3.0_linux_amd64.tar.gz"
-      sha256 "f2a782a114735d9b203215f6adb0edc4213113f56c2362ef779d95f76399b71b"
+      sha256 "465ea4eb620f7ebf5cb917326fd99227a7fcb39da473dabbd980a11e9026bee5"
       define_method(:install) do
         bin.install "ned"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ValeryCherneykin/ned/releases/download/v0.3.0/ned_0.3.0_linux_arm64.tar.gz"
-      sha256 "e7c4c162102359e8c117a9f38fc5d620da28dec916ebcee3ecd6126f140da21b"
+      sha256 "693281aaddb3791163e1983fb9a4caee96f9762ba9c77e57de106a960adca26a"
       define_method(:install) do
         bin.install "ned"
       end
