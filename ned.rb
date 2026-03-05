@@ -5,21 +5,21 @@
 class Ned < Formula
   desc "Open any remote file in your local editor over SSH or Docker"
   homepage "https://github.com/ValeryCherneykin/ned"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ValeryCherneykin/ned/releases/download/v0.2.0/ned_0.2.0_darwin_amd64.tar.gz"
-      sha256 "f8dbca03316153053c71f43782dc32a62749ea176d624d4126257fa4c6516b90"
+      url "https://github.com/ValeryCherneykin/ned/releases/download/v0.3.0/ned_0.3.0_darwin_amd64.tar.gz"
+      sha256 "57257a609b9628ccee4377a00bbb81b0f222f0885ae5c70792c53d4cba52da03"
 
       define_method(:install) do
         bin.install "ned"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ValeryCherneykin/ned/releases/download/v0.2.0/ned_0.2.0_darwin_arm64.tar.gz"
-      sha256 "e891c3547d867d5ddb8c98d8714596b9ce1877335044f66c3585249664069e19"
+      url "https://github.com/ValeryCherneykin/ned/releases/download/v0.3.0/ned_0.3.0_darwin_arm64.tar.gz"
+      sha256 "097680d7dd07f2cd1ddc1cae3fbdfc928b0c126583e96790163741553d625ada"
 
       define_method(:install) do
         bin.install "ned"
@@ -29,15 +29,15 @@ class Ned < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ValeryCherneykin/ned/releases/download/v0.2.0/ned_0.2.0_linux_amd64.tar.gz"
-      sha256 "20a15dbc928a79b29393fdff4b69860ca7ec9517a2baf5e6d42cb656c30d9d7f"
+      url "https://github.com/ValeryCherneykin/ned/releases/download/v0.3.0/ned_0.3.0_linux_amd64.tar.gz"
+      sha256 "9c1fdc0cd1a3ac4f505ddb4e46aff121f27a3607faec9b75df617a93108ac1c2"
       define_method(:install) do
         bin.install "ned"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ValeryCherneykin/ned/releases/download/v0.2.0/ned_0.2.0_linux_arm64.tar.gz"
-      sha256 "721f4794f20e0f22768fb01abdabdd24a93243454ecd8f08e9ce9bd728a68bd3"
+      url "https://github.com/ValeryCherneykin/ned/releases/download/v0.3.0/ned_0.3.0_linux_arm64.tar.gz"
+      sha256 "07b971783fdd409dd571805da2ce3192c467a10595ad3ea772c38b18055ee1b2"
       define_method(:install) do
         bin.install "ned"
       end
